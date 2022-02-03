@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTGUI", "FTGUI\FTGUI.csproj", "{FD800A06-1B0A-450D-A569-95174A79C441}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD800A06-1B0A-450D-A569-95174A79C441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD800A06-1B0A-450D-A569-95174A79C441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD800A06-1B0A-450D-A569-95174A79C441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD800A06-1B0A-450D-A569-95174A79C441}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D1DF698-7260-4F91-A909-4CCA22CE6477}
+	EndGlobalSection
+EndGlobal
