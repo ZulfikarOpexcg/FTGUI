@@ -30,7 +30,7 @@ namespace FTGUI
             gp.AddArc(r.X, r.Y + r.Height - d, d, d, 90, 90);
             Pb_IndicatorPicture.Region = new Region(gp);
             this.WindowState = FormWindowState.Normal;
-            this.Size = new Size(1400, 770);
+            this.Size = new Size(1400, 900);
 
             GetResourceStatusCodeList();
             GetStatusOfResource();
@@ -53,6 +53,7 @@ namespace FTGUI
         private static GetMaintenanceStatusDetails[] oMaintenanceStatus = null;
         private static ServiceUtil oServiceUtil = new ServiceUtil();
         private int iTestNumber = 1;
+        private static DateTime dMoveIn;
         #endregion
 
         #region FUNCTION USEFULL
@@ -170,8 +171,8 @@ namespace FTGUI
             {
                 bool resultMoveIn = false;
                 bool resultMoveStd = false;
-                string sPassFail = Cb_PassFail.Text != "" ? Cb_PassFail.Text : "Fail";
-                Camstar.WCF.ObjectStack.DataPointDetails[] cDataPoint = new Camstar.WCF.ObjectStack.DataPointDetails[16];
+                string sPassFail = Cb_PassFail.Text != "" ? Cb_PassFail.Text : ResultString.False;
+                Camstar.WCF.ObjectStack.DataPointDetails[] cDataPoint = new Camstar.WCF.ObjectStack.DataPointDetails[21];
                 cDataPoint[0] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Power Supply Voltage", DataValue = Tb_PSV.Text != ""? Tb_PSV.Text : "0" , DataType = DataTypeEnum.String };
                 cDataPoint[1] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Frequency", DataValue = Tb_Freq.Text != "" ? Tb_Freq.Text : "0", DataType = DataTypeEnum.String };
                 cDataPoint[2] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Stand by Power", DataValue = Tb_SBY.Text != "" ? Tb_SBY.Text : "0", DataType = DataTypeEnum.String };
@@ -180,45 +181,53 @@ namespace FTGUI
                 cDataPoint[5] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Temperature Delta", DataValue = Tb_TD.Text != "" ? Tb_TD.Text : "0", DataType = DataTypeEnum.String };
                 cDataPoint[6] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pressure Working Cold Water", DataValue = Tb_PWCW.Text != "" ? Tb_PWCW.Text : "0" , DataType = DataTypeEnum.String };
                 cDataPoint[7] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Cold Water Energy Absorption", DataValue = Tb_CWEA.Text != "" ? Tb_CWEA.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[8] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pressure Max", DataValue = Tb_PM.Text != "" ? Tb_PM.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[9] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pressure Loss", DataValue = Tb_PL.Text != "" ? Tb_PL.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[10] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Flow Rate of Hot Water", DataValue = Tb_FRoHW.Text != "" ? Tb_FRoHW.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[11] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pressure Working Hot Water", DataValue = Tb_PWHW.Text != "" ? Tb_PWHW.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[12] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Temperature of Hot Water Max", DataValue = Tb_ToHWM.Text != "" ? Tb_ToHWM.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[13] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Host Water Power Consumption", DataValue = Tb_HWPC.Text != "" ? Tb_HWPC.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[14] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Hot Water Energy Absorption", DataValue = Tb_HWEA.Text != "" ? Tb_HWEA.Text : "0", DataType = DataTypeEnum.String };
-                cDataPoint[15] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pass/Fail", DataValue = sPassFail, DataType = DataTypeEnum.String };
-                CurrentContainerStatus oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "FCT Data");
+                cDataPoint[8] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Cold Water Power Control", DataValue = Tb_CWPC.Text != "" ? Tb_CWPC.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[9] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pressure Max", DataValue = Tb_PM.Text != "" ? Tb_PM.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[10] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pressure Loss", DataValue = Tb_PL.Text != "" ? Tb_PL.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[11] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Flow Rate of Hot Water", DataValue = Tb_FRoHW.Text != "" ? Tb_FRoHW.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[12] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pressure Working Hot Water", DataValue = Tb_PWHW.Text != "" ? Tb_PWHW.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[13] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Temperature of Hot Water Max", DataValue = Tb_ToHWM.Text != "" ? Tb_ToHWM.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[14] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Host Water Power Consumption", DataValue = Tb_HWPC.Text != "" ? Tb_HWPC.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[15] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Volume Hot Water", DataValue = Tb_VHW.Text != "" ? Tb_VHW.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[16] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Hot Water Energy Absorption", DataValue = Tb_HWEA.Text != "" ? Tb_HWEA.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[17] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pre-Heating LED Green", DataValue = Tb_PHLG.Text != "" ? Tb_PHLG.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[18] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Pre-Heating LED Red", DataValue = Tb_PHLR.Text != "" ? Tb_PHLR.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[19] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "Tilt Hold Cold", DataValue = Tb_THC.Text != "" ? Tb_THC.Text : "0", DataType = DataTypeEnum.String };
+                cDataPoint[20] = new Camstar.WCF.ObjectStack.DataPointDetails() { DataName = "RESULT", DataValue = sPassFail, DataType = DataTypeEnum.String };
+                CurrentContainerStatus oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "FCT Minime");
                 if (oContainerStatus.ContainerName != null)
                 {
-                    resultMoveIn = oServiceUtil.ExecuteMoveIn(oContainerStatus.ContainerName.Value, this.iTestNumber == 1 ? AppSettings.Resource : "", "", "", null);
+                    resultMoveIn = oServiceUtil.ExecuteMoveIn(oContainerStatus.ContainerName.Value, AppSettings.Resource, "", "", null, "", false, false, "", "", Convert.ToString(dMoveIn));
                     if (resultMoveIn)
                     {
-                        resultMoveStd = oServiceUtil.ExecuteMoveStd(oContainerStatus.ContainerName.Value, "", this.iTestNumber == 1 ? AppSettings.Resource : "", "FCT Data", "", cDataPoint, Cb_Carrier.SelectedValue != null && this.iTestNumber == 1 ? Cb_Carrier.SelectedValue.ToString() : "", false);
+                        Dt_MoveOut.Value = DateTime.Now;
+                        resultMoveStd = oServiceUtil.ExecuteMoveStd(oContainerStatus.ContainerName.Value, "", "", "FCT Minime", "", cDataPoint, oContainerStatus.Carrier != null? oContainerStatus.Carrier.ToString() : "", false, "", "", Convert.ToString(DateTime.Now));
                         if (resultMoveStd)
                         {
-                            Tb_ContainerPosition.Text = oServiceUtil.GetCurrentContainerStep(Tb_SerialNumber.Text);
                             oServiceUtil.ExecuteResourceThruput(this.iTestNumber == 1 ? Cb_Carrier.Text : "", 1, "Unit", oContainerStatus.Product.Name.ToString());
-                            oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "FCT Data");
-                            if (sPassFail == "Fail" && this.iTestNumber == 1)
+                            oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "FCT Minime");
+                            Tb_ContainerPosition.Text = oServiceUtil.GetCurrentContainerStep(Tb_SerialNumber.Text);
+                            if (oContainerStatus.Operation != null) Tb_Operation.Text = oContainerStatus.Operation.Name.ToString();
+                            if (oContainerStatus.Carrier != null) Cb_Carrier.Text = oContainerStatus.Carrier.Name.ToString();
+                            if (sPassFail == ResultString.False && this.iTestNumber == 1)
                             {
                                 this.iTestNumber = 2;
                                 Bt_Move.Text = "Move In and Move (2)";
                                 MessageBox.Show($"The result Test-1 is Fail and will be perform Test-2.\nMoveIn and MoveStd success! Move to the Operation: {oContainerStatus.OperationName.Value}.");
                             }
-                            else if (sPassFail == "Pass" && this.iTestNumber == 1)
+                            else if (sPassFail == ResultString.True && this.iTestNumber == 1)
                             {
                                 this.iTestNumber = 1;
                                 Bt_Move.Text = "Move In and Move (1)";
                                 MessageBox.Show($"Test-1 the result is Pass.\nMoveIn and MoveStd success! Move to the Operation: {oContainerStatus.OperationName.Value}.");
                             }
-                            else if (sPassFail == "Pass" && this.iTestNumber == 2)
+                            else if (sPassFail == ResultString.True && this.iTestNumber == 2)
                             {
                                 this.iTestNumber = 1;
                                 Bt_Move.Text = "Move In and Move (1)";
                                 MessageBox.Show($"Test-2 the result is Pass.\nMoveIn and MoveStd success! Move to the Operation: {oContainerStatus.OperationName.Value}.");
                             }
-                            else if (sPassFail == "Fail" && this.iTestNumber == 2)
+                            else if (sPassFail == ResultString.False && this.iTestNumber == 2)
                             {
                                 this.iTestNumber = 1;
                                 Bt_Move.Text = "Move In and Move (1)";
@@ -287,13 +296,15 @@ namespace FTGUI
         {
             Tb_Operation.Clear();
             Tb_PO.Clear();
-            CurrentContainerStatus oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "HI-POT Data");
+            CurrentContainerStatus oContainerStatus = oServiceUtil.GetContainerStatusDetails(Tb_SerialNumber.Text, "FCT Minime");
             Tb_ContainerPosition.Text = oServiceUtil.GetCurrentContainerStep(Tb_SerialNumber.Text);
             if (oContainerStatus != null)
             {
                 if (oContainerStatus.MfgOrderName != null) Tb_PO.Text = oContainerStatus.MfgOrderName.ToString();
                 if (oContainerStatus.Operation != null) Tb_Operation.Text = oContainerStatus.Operation.Name.ToString();
                 if (oContainerStatus.Carrier != null) Cb_Carrier.Text = oContainerStatus.Carrier.Name.ToString();
+                dMoveIn = DateTime.Now;
+                Dt_MoveIn.Value = dMoveIn;
             }
         }
         private void Dg_Maintenance_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)

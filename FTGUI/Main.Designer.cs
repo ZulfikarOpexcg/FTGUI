@@ -59,6 +59,16 @@ namespace FTGUI
             this.Tb_Operation = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.Bt_FindContainer = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.ResourceDataGroup = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.Tb_PHLG = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.Tb_THC = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.Dt_MoveOut = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.Tb_PHLR = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.Dt_MoveIn = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.label25 = new System.Windows.Forms.Label();
             this.Tb_HWPC = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -164,11 +174,10 @@ namespace FTGUI
             // Dg_Maintenance
             // 
             this.Dg_Maintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dg_Maintenance.Location = new System.Drawing.Point(21, 455);
-            this.Dg_Maintenance.Margin = new System.Windows.Forms.Padding(4);
+            this.Dg_Maintenance.Location = new System.Drawing.Point(16, 370);
             this.Dg_Maintenance.Name = "Dg_Maintenance";
             this.Dg_Maintenance.RowHeadersWidth = 51;
-            this.Dg_Maintenance.Size = new System.Drawing.Size(1016, 430);
+            this.Dg_Maintenance.Size = new System.Drawing.Size(762, 447);
             this.Dg_Maintenance.StateCommon.Background.Color1 = System.Drawing.Color.White;
             this.Dg_Maintenance.StateCommon.Background.Color2 = System.Drawing.Color.White;
             this.Dg_Maintenance.StateCommon.Background.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -205,8 +214,7 @@ namespace FTGUI
             // 
             // ResourceSetupGrouping
             // 
-            this.ResourceSetupGrouping.Location = new System.Drawing.Point(21, 272);
-            this.ResourceSetupGrouping.Margin = new System.Windows.Forms.Padding(4);
+            this.ResourceSetupGrouping.Location = new System.Drawing.Point(16, 221);
             this.ResourceSetupGrouping.Name = "ResourceSetupGrouping";
             // 
             // ResourceSetupGrouping.Panel
@@ -218,7 +226,7 @@ namespace FTGUI
             this.ResourceSetupGrouping.Panel.Controls.Add(this.Tb_SetupAvailability);
             this.ResourceSetupGrouping.Panel.Controls.Add(this.label15);
             this.ResourceSetupGrouping.Panel.Controls.Add(this.label14);
-            this.ResourceSetupGrouping.Size = new System.Drawing.Size(1016, 146);
+            this.ResourceSetupGrouping.Size = new System.Drawing.Size(762, 119);
             this.ResourceSetupGrouping.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.ResourceSetupGrouping.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.ResourceSetupGrouping.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -242,10 +250,9 @@ namespace FTGUI
             // Cb_StatusCode
             // 
             this.Cb_StatusCode.DropDownWidth = 203;
-            this.Cb_StatusCode.Location = new System.Drawing.Point(8, 52);
-            this.Cb_StatusCode.Margin = new System.Windows.Forms.Padding(4);
+            this.Cb_StatusCode.Location = new System.Drawing.Point(6, 42);
             this.Cb_StatusCode.Name = "Cb_StatusCode";
-            this.Cb_StatusCode.Size = new System.Drawing.Size(225, 37);
+            this.Cb_StatusCode.Size = new System.Drawing.Size(169, 33);
             this.Cb_StatusCode.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.Cb_StatusCode.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.Cb_StatusCode.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -276,10 +283,9 @@ namespace FTGUI
             // Cb_StatusReason
             // 
             this.Cb_StatusReason.DropDownWidth = 203;
-            this.Cb_StatusReason.Location = new System.Drawing.Point(241, 52);
-            this.Cb_StatusReason.Margin = new System.Windows.Forms.Padding(4);
+            this.Cb_StatusReason.Location = new System.Drawing.Point(181, 42);
             this.Cb_StatusReason.Name = "Cb_StatusReason";
-            this.Cb_StatusReason.Size = new System.Drawing.Size(287, 37);
+            this.Cb_StatusReason.Size = new System.Drawing.Size(215, 33);
             this.Cb_StatusReason.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.Cb_StatusReason.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.Cb_StatusReason.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -309,8 +315,7 @@ namespace FTGUI
             // Bt_SetResourceStatus
             // 
             this.Bt_SetResourceStatus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_SetResourceStatus.Location = new System.Drawing.Point(736, 49);
-            this.Bt_SetResourceStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.Bt_SetResourceStatus.Location = new System.Drawing.Point(552, 40);
             this.Bt_SetResourceStatus.Name = "Bt_SetResourceStatus";
             this.Bt_SetResourceStatus.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(121)))), ((int)(((byte)(45)))));
             this.Bt_SetResourceStatus.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(64)))), ((int)(((byte)(4)))));
@@ -325,7 +330,7 @@ namespace FTGUI
             this.Bt_SetResourceStatus.OverrideDefault.Border.Rounding = 20;
             this.Bt_SetResourceStatus.OverrideDefault.Border.Width = 1;
             this.Bt_SetResourceStatus.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.Bt_SetResourceStatus.Size = new System.Drawing.Size(240, 43);
+            this.Bt_SetResourceStatus.Size = new System.Drawing.Size(180, 35);
             this.Bt_SetResourceStatus.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(121)))), ((int)(((byte)(45)))));
             this.Bt_SetResourceStatus.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(64)))), ((int)(((byte)(4)))));
             this.Bt_SetResourceStatus.StateCommon.Back.ColorAngle = 45F;
@@ -373,20 +378,18 @@ namespace FTGUI
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Gray;
-            this.label16.Location = new System.Drawing.Point(532, 21);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(399, 17);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(98, 20);
+            this.label16.Size = new System.Drawing.Size(79, 16);
             this.label16.TabIndex = 34;
             this.label16.Text = "Availability :";
             // 
             // Tb_SetupAvailability
             // 
             this.Tb_SetupAvailability.Enabled = false;
-            this.Tb_SetupAvailability.Location = new System.Drawing.Point(536, 49);
-            this.Tb_SetupAvailability.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_SetupAvailability.Location = new System.Drawing.Point(402, 40);
             this.Tb_SetupAvailability.Name = "Tb_SetupAvailability";
-            this.Tb_SetupAvailability.Size = new System.Drawing.Size(192, 39);
+            this.Tb_SetupAvailability.Size = new System.Drawing.Size(144, 35);
             this.Tb_SetupAvailability.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_SetupAvailability.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_SetupAvailability.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -404,10 +407,9 @@ namespace FTGUI
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Gray;
-            this.label15.Location = new System.Drawing.Point(237, 21);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(178, 17);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(196, 20);
+            this.label15.Size = new System.Drawing.Size(158, 16);
             this.label15.TabIndex = 36;
             this.label15.Text = "Resource Status Reason";
             // 
@@ -416,17 +418,15 @@ namespace FTGUI
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Gray;
-            this.label14.Location = new System.Drawing.Point(4, 21);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(3, 17);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(178, 20);
+            this.label14.Size = new System.Drawing.Size(143, 16);
             this.label14.TabIndex = 34;
             this.label14.Text = "Resource Status Code";
             // 
             // ResourceGrouping
             // 
-            this.ResourceGrouping.Location = new System.Drawing.Point(21, 111);
-            this.ResourceGrouping.Margin = new System.Windows.Forms.Padding(4);
+            this.ResourceGrouping.Location = new System.Drawing.Point(16, 90);
             this.ResourceGrouping.Name = "ResourceGrouping";
             // 
             // ResourceGrouping.Panel
@@ -440,7 +440,7 @@ namespace FTGUI
             this.ResourceGrouping.Panel.Controls.Add(this.label12);
             this.ResourceGrouping.Panel.Controls.Add(this.label1);
             this.ResourceGrouping.Panel.Controls.Add(this.label5);
-            this.ResourceGrouping.Size = new System.Drawing.Size(1016, 143);
+            this.ResourceGrouping.Size = new System.Drawing.Size(762, 116);
             this.ResourceGrouping.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.ResourceGrouping.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.ResourceGrouping.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -463,20 +463,18 @@ namespace FTGUI
             // 
             // Pb_IndicatorPicture
             // 
-            this.Pb_IndicatorPicture.Location = new System.Drawing.Point(940, 50);
-            this.Pb_IndicatorPicture.Margin = new System.Windows.Forms.Padding(4);
+            this.Pb_IndicatorPicture.Location = new System.Drawing.Point(705, 41);
             this.Pb_IndicatorPicture.Name = "Pb_IndicatorPicture";
-            this.Pb_IndicatorPicture.Size = new System.Drawing.Size(37, 32);
+            this.Pb_IndicatorPicture.Size = new System.Drawing.Size(28, 26);
             this.Pb_IndicatorPicture.TabIndex = 33;
             this.Pb_IndicatorPicture.TabStop = false;
             // 
             // Tb_Availability
             // 
             this.Tb_Availability.Enabled = false;
-            this.Tb_Availability.Location = new System.Drawing.Point(737, 48);
-            this.Tb_Availability.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_Availability.Location = new System.Drawing.Point(553, 39);
             this.Tb_Availability.Name = "Tb_Availability";
-            this.Tb_Availability.Size = new System.Drawing.Size(176, 39);
+            this.Tb_Availability.Size = new System.Drawing.Size(132, 35);
             this.Tb_Availability.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_Availability.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_Availability.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -492,10 +490,9 @@ namespace FTGUI
             // Tb_TimeAtStatus
             // 
             this.Tb_TimeAtStatus.Enabled = false;
-            this.Tb_TimeAtStatus.Location = new System.Drawing.Point(549, 48);
-            this.Tb_TimeAtStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_TimeAtStatus.Location = new System.Drawing.Point(412, 39);
             this.Tb_TimeAtStatus.Name = "Tb_TimeAtStatus";
-            this.Tb_TimeAtStatus.Size = new System.Drawing.Size(180, 39);
+            this.Tb_TimeAtStatus.Size = new System.Drawing.Size(135, 35);
             this.Tb_TimeAtStatus.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_TimeAtStatus.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_TimeAtStatus.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -511,10 +508,9 @@ namespace FTGUI
             // Tb_StatusCode
             // 
             this.Tb_StatusCode.Enabled = false;
-            this.Tb_StatusCode.Location = new System.Drawing.Point(27, 48);
-            this.Tb_StatusCode.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_StatusCode.Location = new System.Drawing.Point(20, 39);
             this.Tb_StatusCode.Name = "Tb_StatusCode";
-            this.Tb_StatusCode.Size = new System.Drawing.Size(248, 39);
+            this.Tb_StatusCode.Size = new System.Drawing.Size(186, 35);
             this.Tb_StatusCode.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_StatusCode.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_StatusCode.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -530,10 +526,9 @@ namespace FTGUI
             // Tb_StatusReason
             // 
             this.Tb_StatusReason.Enabled = false;
-            this.Tb_StatusReason.Location = new System.Drawing.Point(283, 48);
-            this.Tb_StatusReason.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_StatusReason.Location = new System.Drawing.Point(212, 39);
             this.Tb_StatusReason.Name = "Tb_StatusReason";
-            this.Tb_StatusReason.Size = new System.Drawing.Size(259, 39);
+            this.Tb_StatusReason.Size = new System.Drawing.Size(194, 35);
             this.Tb_StatusReason.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_StatusReason.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_StatusReason.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -551,10 +546,9 @@ namespace FTGUI
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(545, 16);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(409, 13);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(128, 20);
+            this.label13.Size = new System.Drawing.Size(99, 16);
             this.label13.TabIndex = 29;
             this.label13.Text = "Time at Status :";
             // 
@@ -563,10 +557,9 @@ namespace FTGUI
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(733, 16);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(550, 13);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 20);
+            this.label12.Size = new System.Drawing.Size(79, 16);
             this.label12.TabIndex = 28;
             this.label12.Text = "Availability :";
             // 
@@ -575,10 +568,9 @@ namespace FTGUI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(23, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(17, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 20);
+            this.label1.Size = new System.Drawing.Size(87, 16);
             this.label1.TabIndex = 27;
             this.label1.Text = "Status Code :";
             // 
@@ -587,20 +579,19 @@ namespace FTGUI
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(279, 16);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(209, 13);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 20);
+            this.label5.Size = new System.Drawing.Size(102, 16);
             this.label5.TabIndex = 26;
             this.label5.Text = "Status Reason :";
             // 
             // Logo
             // 
             this.Logo.Image = global::FTGUI.Properties.Resources.WIK_logo;
-            this.Logo.Location = new System.Drawing.Point(1693, 19);
-            this.Logo.Margin = new System.Windows.Forms.Padding(5);
+            this.Logo.Location = new System.Drawing.Point(1270, 15);
+            this.Logo.Margin = new System.Windows.Forms.Padding(4);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(144, 53);
+            this.Logo.Size = new System.Drawing.Size(108, 43);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Logo.TabIndex = 63;
             this.Logo.TabStop = false;
@@ -610,10 +601,9 @@ namespace FTGUI
             this.MyTitle.AutoSize = true;
             this.MyTitle.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold);
             this.MyTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.MyTitle.Location = new System.Drawing.Point(13, 19);
-            this.MyTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MyTitle.Location = new System.Drawing.Point(10, 15);
             this.MyTitle.Name = "MyTitle";
-            this.MyTitle.Size = new System.Drawing.Size(60, 46);
+            this.MyTitle.Size = new System.Drawing.Size(49, 37);
             this.MyTitle.TabIndex = 62;
             this.MyTitle.Text = "FT";
             // 
@@ -622,20 +612,18 @@ namespace FTGUI
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(1068, 185);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(801, 150);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 20);
+            this.label2.Size = new System.Drawing.Size(115, 16);
             this.label2.TabIndex = 74;
             this.label2.Text = "Production Order :";
             // 
             // Tb_PO
             // 
             this.Tb_PO.Enabled = false;
-            this.Tb_PO.Location = new System.Drawing.Point(1223, 174);
-            this.Tb_PO.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_PO.Location = new System.Drawing.Point(917, 141);
             this.Tb_PO.Name = "Tb_PO";
-            this.Tb_PO.Size = new System.Drawing.Size(369, 39);
+            this.Tb_PO.Size = new System.Drawing.Size(277, 35);
             this.Tb_PO.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_PO.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_PO.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -653,20 +641,18 @@ namespace FTGUI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(1068, 86);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(801, 70);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 20);
+            this.label4.Size = new System.Drawing.Size(73, 16);
             this.label4.TabIndex = 72;
             this.label4.Text = "Operation :";
             // 
             // Tb_Operation
             // 
             this.Tb_Operation.Enabled = false;
-            this.Tb_Operation.Location = new System.Drawing.Point(1072, 110);
-            this.Tb_Operation.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_Operation.Location = new System.Drawing.Point(804, 89);
             this.Tb_Operation.Name = "Tb_Operation";
-            this.Tb_Operation.Size = new System.Drawing.Size(252, 39);
+            this.Tb_Operation.Size = new System.Drawing.Size(189, 35);
             this.Tb_Operation.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_Operation.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_Operation.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -682,8 +668,8 @@ namespace FTGUI
             // Bt_FindContainer
             // 
             this.Bt_FindContainer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_FindContainer.Location = new System.Drawing.Point(1601, 174);
-            this.Bt_FindContainer.Margin = new System.Windows.Forms.Padding(5);
+            this.Bt_FindContainer.Location = new System.Drawing.Point(1201, 141);
+            this.Bt_FindContainer.Margin = new System.Windows.Forms.Padding(4);
             this.Bt_FindContainer.Name = "Bt_FindContainer";
             this.Bt_FindContainer.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.Bt_FindContainer.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -698,7 +684,7 @@ namespace FTGUI
             this.Bt_FindContainer.OverrideDefault.Border.Rounding = 20;
             this.Bt_FindContainer.OverrideDefault.Border.Width = 1;
             this.Bt_FindContainer.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.Bt_FindContainer.Size = new System.Drawing.Size(236, 43);
+            this.Bt_FindContainer.Size = new System.Drawing.Size(177, 35);
             this.Bt_FindContainer.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.Bt_FindContainer.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.Bt_FindContainer.StateCommon.Back.ColorAngle = 45F;
@@ -743,12 +729,21 @@ namespace FTGUI
             // 
             // ResourceDataGroup
             // 
-            this.ResourceDataGroup.Location = new System.Drawing.Point(1059, 226);
-            this.ResourceDataGroup.Margin = new System.Windows.Forms.Padding(4);
+            this.ResourceDataGroup.Location = new System.Drawing.Point(794, 184);
             this.ResourceDataGroup.Name = "ResourceDataGroup";
             // 
             // ResourceDataGroup.Panel
             // 
+            this.ResourceDataGroup.Panel.Controls.Add(this.label35);
+            this.ResourceDataGroup.Panel.Controls.Add(this.Tb_PHLG);
+            this.ResourceDataGroup.Panel.Controls.Add(this.label33);
+            this.ResourceDataGroup.Panel.Controls.Add(this.label31);
+            this.ResourceDataGroup.Panel.Controls.Add(this.Tb_THC);
+            this.ResourceDataGroup.Panel.Controls.Add(this.label34);
+            this.ResourceDataGroup.Panel.Controls.Add(this.Dt_MoveOut);
+            this.ResourceDataGroup.Panel.Controls.Add(this.Tb_PHLR);
+            this.ResourceDataGroup.Panel.Controls.Add(this.label32);
+            this.ResourceDataGroup.Panel.Controls.Add(this.Dt_MoveIn);
             this.ResourceDataGroup.Panel.Controls.Add(this.label25);
             this.ResourceDataGroup.Panel.Controls.Add(this.Tb_HWPC);
             this.ResourceDataGroup.Panel.Controls.Add(this.label26);
@@ -788,7 +783,7 @@ namespace FTGUI
             this.ResourceDataGroup.Panel.Controls.Add(this.Tb_PSV);
             this.ResourceDataGroup.Panel.Controls.Add(this.label11);
             this.ResourceDataGroup.Panel.Controls.Add(this.Bt_Move);
-            this.ResourceDataGroup.Size = new System.Drawing.Size(778, 659);
+            this.ResourceDataGroup.Size = new System.Drawing.Size(584, 633);
             this.ResourceDataGroup.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.ResourceDataGroup.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.ResourceDataGroup.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -809,24 +804,170 @@ namespace FTGUI
             this.ResourceDataGroup.TabIndex = 70;
             this.ResourceDataGroup.Values.Heading = "Resource";
             // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label35.ForeColor = System.Drawing.Color.Gray;
+            this.label35.Location = new System.Drawing.Point(382, 396);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(119, 13);
+            this.label35.TabIndex = 103;
+            this.label35.Text = "Pre-Heating LED Green";
+            // 
+            // Tb_PHLG
+            // 
+            this.Tb_PHLG.Location = new System.Drawing.Point(385, 415);
+            this.Tb_PHLG.Name = "Tb_PHLG";
+            this.Tb_PHLG.Size = new System.Drawing.Size(158, 35);
+            this.Tb_PHLG.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.Tb_PHLG.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.Tb_PHLG.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.Tb_PHLG.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Tb_PHLG.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.Tb_PHLG.StateCommon.Border.Rounding = 20;
+            this.Tb_PHLG.StateCommon.Border.Width = 1;
+            this.Tb_PHLG.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.Tb_PHLG.TabIndex = 104;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label33.ForeColor = System.Drawing.Color.Gray;
+            this.label33.Location = new System.Drawing.Point(201, 461);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(70, 13);
+            this.label33.TabIndex = 89;
+            this.label33.Text = "Tilt Hold Cold";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Gray;
+            this.label31.Location = new System.Drawing.Point(189, 531);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(149, 16);
+            this.label31.TabIndex = 102;
+            this.label31.Text = "Move Out: (TimeStamp)";
+            // 
+            // Tb_THC
+            // 
+            this.Tb_THC.Location = new System.Drawing.Point(204, 480);
+            this.Tb_THC.Name = "Tb_THC";
+            this.Tb_THC.Size = new System.Drawing.Size(158, 35);
+            this.Tb_THC.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.Tb_THC.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.Tb_THC.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.Tb_THC.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Tb_THC.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.Tb_THC.StateCommon.Border.Rounding = 20;
+            this.Tb_THC.StateCommon.Border.Width = 1;
+            this.Tb_THC.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.Tb_THC.TabIndex = 90;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label34.ForeColor = System.Drawing.Color.Gray;
+            this.label34.Location = new System.Drawing.Point(10, 461);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(110, 13);
+            this.label34.TabIndex = 87;
+            this.label34.Text = "Pre-Heating LED Red";
+            // 
+            // Dt_MoveOut
+            // 
+            this.Dt_MoveOut.CalendarTodayDate = new System.DateTime(2021, 12, 29, 0, 0, 0, 0);
+            this.Dt_MoveOut.CustomFormat = "yyyy-MM-dd hh:mm:ss tt";
+            this.Dt_MoveOut.Enabled = false;
+            this.Dt_MoveOut.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Dt_MoveOut.Location = new System.Drawing.Point(192, 547);
+            this.Dt_MoveOut.Name = "Dt_MoveOut";
+            this.Dt_MoveOut.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.Dt_MoveOut.ShowUpDown = true;
+            this.Dt_MoveOut.Size = new System.Drawing.Size(186, 33);
+            this.Dt_MoveOut.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Dt_MoveOut.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Dt_MoveOut.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Dt_MoveOut.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.Dt_MoveOut.StateCommon.Border.Rounding = 20;
+            this.Dt_MoveOut.StateCommon.Border.Width = 1;
+            this.Dt_MoveOut.TabIndex = 101;
+            // 
+            // Tb_PHLR
+            // 
+            this.Tb_PHLR.Location = new System.Drawing.Point(14, 480);
+            this.Tb_PHLR.Name = "Tb_PHLR";
+            this.Tb_PHLR.Size = new System.Drawing.Size(158, 35);
+            this.Tb_PHLR.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.Tb_PHLR.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.Tb_PHLR.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.Tb_PHLR.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Tb_PHLR.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.Tb_PHLR.StateCommon.Border.Rounding = 20;
+            this.Tb_PHLR.StateCommon.Border.Width = 1;
+            this.Tb_PHLR.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.Tb_PHLR.TabIndex = 88;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.Gray;
+            this.label32.Location = new System.Drawing.Point(7, 531);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(139, 16);
+            this.label32.TabIndex = 100;
+            this.label32.Text = "Move In: (TimeStamp)";
+            // 
+            // Dt_MoveIn
+            // 
+            this.Dt_MoveIn.CalendarTodayDate = new System.DateTime(2021, 12, 29, 0, 0, 0, 0);
+            this.Dt_MoveIn.CustomFormat = "yyyy-MM-dd hh:mm:ss tt";
+            this.Dt_MoveIn.Enabled = false;
+            this.Dt_MoveIn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Dt_MoveIn.Location = new System.Drawing.Point(10, 547);
+            this.Dt_MoveIn.Name = "Dt_MoveIn";
+            this.Dt_MoveIn.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.Dt_MoveIn.ShowUpDown = true;
+            this.Dt_MoveIn.Size = new System.Drawing.Size(173, 33);
+            this.Dt_MoveIn.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Dt_MoveIn.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Dt_MoveIn.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Dt_MoveIn.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.Dt_MoveIn.StateCommon.Border.Rounding = 20;
+            this.Dt_MoveIn.StateCommon.Border.Width = 1;
+            this.Dt_MoveIn.TabIndex = 99;
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label25.ForeColor = System.Drawing.Color.Gray;
-            this.label25.Location = new System.Drawing.Point(509, 411);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Location = new System.Drawing.Point(382, 334);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(208, 17);
+            this.label25.Size = new System.Drawing.Size(158, 13);
             this.label25.TabIndex = 97;
             this.label25.Text = "Host Water Power Consumption";
             // 
             // Tb_HWPC
             // 
-            this.Tb_HWPC.Location = new System.Drawing.Point(513, 435);
-            this.Tb_HWPC.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_HWPC.Location = new System.Drawing.Point(385, 353);
             this.Tb_HWPC.Name = "Tb_HWPC";
-            this.Tb_HWPC.Size = new System.Drawing.Size(211, 39);
+            this.Tb_HWPC.Size = new System.Drawing.Size(158, 35);
             this.Tb_HWPC.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_HWPC.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_HWPC.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -844,19 +985,17 @@ namespace FTGUI
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label26.ForeColor = System.Drawing.Color.Gray;
-            this.label26.Location = new System.Drawing.Point(509, 332);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Location = new System.Drawing.Point(382, 270);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(154, 17);
+            this.label26.Size = new System.Drawing.Size(119, 13);
             this.label26.TabIndex = 95;
             this.label26.Text = "Flow Rate of Hot Water";
             // 
             // Tb_FRoHW
             // 
-            this.Tb_FRoHW.Location = new System.Drawing.Point(513, 356);
-            this.Tb_FRoHW.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_FRoHW.Location = new System.Drawing.Point(385, 289);
             this.Tb_FRoHW.Name = "Tb_FRoHW";
-            this.Tb_FRoHW.Size = new System.Drawing.Size(211, 39);
+            this.Tb_FRoHW.Size = new System.Drawing.Size(158, 35);
             this.Tb_FRoHW.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_FRoHW.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_FRoHW.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -874,19 +1013,17 @@ namespace FTGUI
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label27.ForeColor = System.Drawing.Color.Gray;
-            this.label27.Location = new System.Drawing.Point(509, 259);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Location = new System.Drawing.Point(382, 210);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(170, 17);
+            this.label27.Size = new System.Drawing.Size(129, 13);
             this.label27.TabIndex = 93;
             this.label27.Text = "Cold Water Power Control";
             // 
             // Tb_CWPC
             // 
-            this.Tb_CWPC.Location = new System.Drawing.Point(513, 283);
-            this.Tb_CWPC.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_CWPC.Location = new System.Drawing.Point(385, 230);
             this.Tb_CWPC.Name = "Tb_CWPC";
-            this.Tb_CWPC.Size = new System.Drawing.Size(211, 39);
+            this.Tb_CWPC.Size = new System.Drawing.Size(158, 35);
             this.Tb_CWPC.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_CWPC.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_CWPC.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -904,19 +1041,17 @@ namespace FTGUI
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label28.ForeColor = System.Drawing.Color.Gray;
-            this.label28.Location = new System.Drawing.Point(507, 183);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Location = new System.Drawing.Point(380, 149);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(127, 17);
+            this.label28.Size = new System.Drawing.Size(95, 13);
             this.label28.TabIndex = 91;
             this.label28.Text = "Temperature Delta";
             // 
             // Tb_TD
             // 
-            this.Tb_TD.Location = new System.Drawing.Point(511, 207);
-            this.Tb_TD.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_TD.Location = new System.Drawing.Point(383, 168);
             this.Tb_TD.Name = "Tb_TD";
-            this.Tb_TD.Size = new System.Drawing.Size(211, 39);
+            this.Tb_TD.Size = new System.Drawing.Size(158, 35);
             this.Tb_TD.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_TD.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_TD.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -934,19 +1069,17 @@ namespace FTGUI
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label29.ForeColor = System.Drawing.Color.Gray;
-            this.label29.Location = new System.Drawing.Point(507, 104);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Location = new System.Drawing.Point(380, 84);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(107, 17);
+            this.label29.Size = new System.Drawing.Size(82, 13);
             this.label29.TabIndex = 89;
             this.label29.Text = "Stand by Power";
             // 
             // Tb_SBY
             // 
-            this.Tb_SBY.Location = new System.Drawing.Point(511, 128);
-            this.Tb_SBY.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_SBY.Location = new System.Drawing.Point(383, 104);
             this.Tb_SBY.Name = "Tb_SBY";
-            this.Tb_SBY.Size = new System.Drawing.Size(211, 39);
+            this.Tb_SBY.Size = new System.Drawing.Size(158, 35);
             this.Tb_SBY.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_SBY.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_SBY.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -964,19 +1097,17 @@ namespace FTGUI
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label19.ForeColor = System.Drawing.Color.Gray;
-            this.label19.Location = new System.Drawing.Point(266, 411);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Location = new System.Drawing.Point(200, 334);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(203, 17);
+            this.label19.Size = new System.Drawing.Size(154, 13);
             this.label19.TabIndex = 87;
             this.label19.Text = "Temperature of Hot Water Max";
             // 
             // Tb_ToHWM
             // 
-            this.Tb_ToHWM.Location = new System.Drawing.Point(270, 435);
-            this.Tb_ToHWM.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_ToHWM.Location = new System.Drawing.Point(202, 353);
             this.Tb_ToHWM.Name = "Tb_ToHWM";
-            this.Tb_ToHWM.Size = new System.Drawing.Size(211, 39);
+            this.Tb_ToHWM.Size = new System.Drawing.Size(158, 35);
             this.Tb_ToHWM.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_ToHWM.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_ToHWM.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -994,19 +1125,17 @@ namespace FTGUI
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label20.ForeColor = System.Drawing.Color.Gray;
-            this.label20.Location = new System.Drawing.Point(268, 487);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Location = new System.Drawing.Point(201, 396);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(193, 17);
+            this.label20.Size = new System.Drawing.Size(145, 13);
             this.label20.TabIndex = 85;
             this.label20.Text = "Hot Water Energy Absorption";
             // 
             // Tb_HWEA
             // 
-            this.Tb_HWEA.Location = new System.Drawing.Point(272, 511);
-            this.Tb_HWEA.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_HWEA.Location = new System.Drawing.Point(204, 415);
             this.Tb_HWEA.Name = "Tb_HWEA";
-            this.Tb_HWEA.Size = new System.Drawing.Size(211, 39);
+            this.Tb_HWEA.Size = new System.Drawing.Size(158, 35);
             this.Tb_HWEA.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_HWEA.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_HWEA.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1023,12 +1152,11 @@ namespace FTGUI
             // 
             this.Cb_PassFail.DropDownWidth = 203;
             this.Cb_PassFail.Items.AddRange(new object[] {
-            "Pass",
-            "Fail"});
-            this.Cb_PassFail.Location = new System.Drawing.Point(513, 513);
-            this.Cb_PassFail.Margin = new System.Windows.Forms.Padding(4);
+            "True",
+            "False"});
+            this.Cb_PassFail.Location = new System.Drawing.Point(385, 480);
             this.Cb_PassFail.Name = "Cb_PassFail";
-            this.Cb_PassFail.Size = new System.Drawing.Size(211, 37);
+            this.Cb_PassFail.Size = new System.Drawing.Size(158, 33);
             this.Cb_PassFail.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.Cb_PassFail.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.Cb_PassFail.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -1059,19 +1187,17 @@ namespace FTGUI
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label21.ForeColor = System.Drawing.Color.Gray;
-            this.label21.Location = new System.Drawing.Point(14, 487);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Location = new System.Drawing.Point(10, 396);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(123, 17);
+            this.label21.Size = new System.Drawing.Size(94, 13);
             this.label21.TabIndex = 83;
             this.label21.Text = "Volume Hot Water";
             // 
             // Tb_VHW
             // 
-            this.Tb_VHW.Location = new System.Drawing.Point(18, 511);
-            this.Tb_VHW.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_VHW.Location = new System.Drawing.Point(14, 415);
             this.Tb_VHW.Name = "Tb_VHW";
-            this.Tb_VHW.Size = new System.Drawing.Size(211, 39);
+            this.Tb_VHW.Size = new System.Drawing.Size(158, 35);
             this.Tb_VHW.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_VHW.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_VHW.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1089,31 +1215,28 @@ namespace FTGUI
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(509, 487);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(382, 459);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 17);
+            this.label9.Size = new System.Drawing.Size(50, 13);
             this.label9.TabIndex = 67;
-            this.label9.Text = "Pass/Fail";
+            this.label9.Text = "RESULT";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label22.ForeColor = System.Drawing.Color.Gray;
-            this.label22.Location = new System.Drawing.Point(12, 411);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Location = new System.Drawing.Point(9, 334);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(189, 17);
+            this.label22.Size = new System.Drawing.Size(143, 13);
             this.label22.TabIndex = 81;
             this.label22.Text = "Pressure Working Hot Water";
             // 
             // Tb_PWHW
             // 
-            this.Tb_PWHW.Location = new System.Drawing.Point(16, 435);
-            this.Tb_PWHW.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_PWHW.Location = new System.Drawing.Point(12, 353);
             this.Tb_PWHW.Name = "Tb_PWHW";
-            this.Tb_PWHW.Size = new System.Drawing.Size(211, 39);
+            this.Tb_PWHW.Size = new System.Drawing.Size(158, 35);
             this.Tb_PWHW.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_PWHW.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_PWHW.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1131,19 +1254,17 @@ namespace FTGUI
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label23.ForeColor = System.Drawing.Color.Gray;
-            this.label23.Location = new System.Drawing.Point(266, 332);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Location = new System.Drawing.Point(200, 270);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(99, 17);
+            this.label23.Size = new System.Drawing.Size(73, 13);
             this.label23.TabIndex = 79;
             this.label23.Text = "Pressure Loss";
             // 
             // Tb_PL
             // 
-            this.Tb_PL.Location = new System.Drawing.Point(270, 356);
-            this.Tb_PL.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_PL.Location = new System.Drawing.Point(202, 289);
             this.Tb_PL.Name = "Tb_PL";
-            this.Tb_PL.Size = new System.Drawing.Size(211, 39);
+            this.Tb_PL.Size = new System.Drawing.Size(158, 35);
             this.Tb_PL.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_PL.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_PL.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1161,19 +1282,17 @@ namespace FTGUI
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label24.ForeColor = System.Drawing.Color.Gray;
-            this.label24.Location = new System.Drawing.Point(12, 332);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Location = new System.Drawing.Point(9, 270);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(94, 17);
+            this.label24.Size = new System.Drawing.Size(71, 13);
             this.label24.TabIndex = 77;
             this.label24.Text = "Pressure Max";
             // 
             // Tb_PM
             // 
-            this.Tb_PM.Location = new System.Drawing.Point(16, 356);
-            this.Tb_PM.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_PM.Location = new System.Drawing.Point(12, 289);
             this.Tb_PM.Name = "Tb_PM";
-            this.Tb_PM.Size = new System.Drawing.Size(211, 39);
+            this.Tb_PM.Size = new System.Drawing.Size(158, 35);
             this.Tb_PM.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_PM.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_PM.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1191,19 +1310,17 @@ namespace FTGUI
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label18.ForeColor = System.Drawing.Color.Gray;
-            this.label18.Location = new System.Drawing.Point(264, 183);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(198, 149);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(207, 17);
+            this.label18.Size = new System.Drawing.Size(155, 13);
             this.label18.TabIndex = 75;
             this.label18.Text = "Temperature of Cold Water Out";
             // 
             // Tb_ToCWO
             // 
-            this.Tb_ToCWO.Location = new System.Drawing.Point(268, 207);
-            this.Tb_ToCWO.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_ToCWO.Location = new System.Drawing.Point(201, 168);
             this.Tb_ToCWO.Name = "Tb_ToCWO";
-            this.Tb_ToCWO.Size = new System.Drawing.Size(211, 39);
+            this.Tb_ToCWO.Size = new System.Drawing.Size(158, 35);
             this.Tb_ToCWO.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_ToCWO.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_ToCWO.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1221,19 +1338,17 @@ namespace FTGUI
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(266, 259);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(200, 210);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(199, 17);
+            this.label10.Size = new System.Drawing.Size(149, 13);
             this.label10.TabIndex = 73;
             this.label10.Text = "Cold Water Energy Absorption";
             // 
             // Tb_CWEA
             // 
-            this.Tb_CWEA.Location = new System.Drawing.Point(270, 283);
-            this.Tb_CWEA.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_CWEA.Location = new System.Drawing.Point(202, 230);
             this.Tb_CWEA.Name = "Tb_CWEA";
-            this.Tb_CWEA.Size = new System.Drawing.Size(211, 39);
+            this.Tb_CWEA.Size = new System.Drawing.Size(158, 35);
             this.Tb_CWEA.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_CWEA.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_CWEA.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1251,19 +1366,17 @@ namespace FTGUI
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label17.ForeColor = System.Drawing.Color.Gray;
-            this.label17.Location = new System.Drawing.Point(12, 259);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(9, 210);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(195, 17);
+            this.label17.Size = new System.Drawing.Size(147, 13);
             this.label17.TabIndex = 71;
             this.label17.Text = "Pressure Working Cold Water";
             // 
             // Tb_PWCW
             // 
-            this.Tb_PWCW.Location = new System.Drawing.Point(16, 283);
-            this.Tb_PWCW.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_PWCW.Location = new System.Drawing.Point(12, 230);
             this.Tb_PWCW.Name = "Tb_PWCW";
-            this.Tb_PWCW.Size = new System.Drawing.Size(211, 39);
+            this.Tb_PWCW.Size = new System.Drawing.Size(158, 35);
             this.Tb_PWCW.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_PWCW.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_PWCW.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1279,10 +1392,10 @@ namespace FTGUI
             // Cb_Carrier
             // 
             this.Cb_Carrier.DropDownWidth = 203;
-            this.Cb_Carrier.Location = new System.Drawing.Point(14, 50);
-            this.Cb_Carrier.Margin = new System.Windows.Forms.Padding(4);
+            this.Cb_Carrier.Enabled = false;
+            this.Cb_Carrier.Location = new System.Drawing.Point(10, 41);
             this.Cb_Carrier.Name = "Cb_Carrier";
-            this.Cb_Carrier.Size = new System.Drawing.Size(225, 37);
+            this.Cb_Carrier.Size = new System.Drawing.Size(169, 33);
             this.Cb_Carrier.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Cb_Carrier.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Cb_Carrier.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -1313,19 +1426,17 @@ namespace FTGUI
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(10, 183);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(8, 149);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(160, 17);
+            this.label8.Size = new System.Drawing.Size(123, 13);
             this.label8.TabIndex = 65;
             this.label8.Text = "Flow Rate of Cold Water";
             // 
             // Tb_FRoCW
             // 
-            this.Tb_FRoCW.Location = new System.Drawing.Point(14, 207);
-            this.Tb_FRoCW.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_FRoCW.Location = new System.Drawing.Point(10, 168);
             this.Tb_FRoCW.Name = "Tb_FRoCW";
-            this.Tb_FRoCW.Size = new System.Drawing.Size(211, 39);
+            this.Tb_FRoCW.Size = new System.Drawing.Size(158, 35);
             this.Tb_FRoCW.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_FRoCW.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_FRoCW.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1343,19 +1454,17 @@ namespace FTGUI
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(264, 104);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(198, 84);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 17);
+            this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 63;
             this.label6.Text = "Frequency";
             // 
             // Tb_Freq
             // 
-            this.Tb_Freq.Location = new System.Drawing.Point(268, 128);
-            this.Tb_Freq.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_Freq.Location = new System.Drawing.Point(201, 104);
             this.Tb_Freq.Name = "Tb_Freq";
-            this.Tb_Freq.Size = new System.Drawing.Size(211, 39);
+            this.Tb_Freq.Size = new System.Drawing.Size(158, 35);
             this.Tb_Freq.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_Freq.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_Freq.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1373,19 +1482,17 @@ namespace FTGUI
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(10, 104);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(8, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 17);
+            this.label3.Size = new System.Drawing.Size(111, 13);
             this.label3.TabIndex = 61;
             this.label3.Text = "Power Supply Voltage";
             // 
             // Tb_PSV
             // 
-            this.Tb_PSV.Location = new System.Drawing.Point(14, 128);
-            this.Tb_PSV.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_PSV.Location = new System.Drawing.Point(10, 104);
             this.Tb_PSV.Name = "Tb_PSV";
-            this.Tb_PSV.Size = new System.Drawing.Size(211, 39);
+            this.Tb_PSV.Size = new System.Drawing.Size(158, 35);
             this.Tb_PSV.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_PSV.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_PSV.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1403,18 +1510,17 @@ namespace FTGUI
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(10, 16);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(8, 13);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 20);
+            this.label11.Size = new System.Drawing.Size(48, 16);
             this.label11.TabIndex = 59;
             this.label11.Text = "Carrier";
             // 
             // Bt_Move
             // 
             this.Bt_Move.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_Move.Location = new System.Drawing.Point(513, 572);
-            this.Bt_Move.Margin = new System.Windows.Forms.Padding(5);
+            this.Bt_Move.Location = new System.Drawing.Point(385, 547);
+            this.Bt_Move.Margin = new System.Windows.Forms.Padding(4);
             this.Bt_Move.Name = "Bt_Move";
             this.Bt_Move.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(116)))));
             this.Bt_Move.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(143)))), ((int)(((byte)(81)))));
@@ -1429,7 +1535,7 @@ namespace FTGUI
             this.Bt_Move.OverrideDefault.Border.Rounding = 20;
             this.Bt_Move.OverrideDefault.Border.Width = 1;
             this.Bt_Move.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.Bt_Move.Size = new System.Drawing.Size(221, 43);
+            this.Bt_Move.Size = new System.Drawing.Size(166, 35);
             this.Bt_Move.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(116)))));
             this.Bt_Move.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(143)))), ((int)(((byte)(81)))));
             this.Bt_Move.StateCommon.Back.ColorAngle = 45F;
@@ -1477,19 +1583,19 @@ namespace FTGUI
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(1597, 86);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Location = new System.Drawing.Point(1198, 70);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(161, 20);
+            this.label7.Size = new System.Drawing.Size(126, 16);
             this.label7.TabIndex = 68;
             this.label7.Text = "Serial Number Unit :";
             // 
             // Tb_SerialNumber
             // 
-            this.Tb_SerialNumber.Location = new System.Drawing.Point(1601, 111);
-            this.Tb_SerialNumber.Margin = new System.Windows.Forms.Padding(5);
+            this.Tb_SerialNumber.Location = new System.Drawing.Point(1201, 90);
+            this.Tb_SerialNumber.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_SerialNumber.Name = "Tb_SerialNumber";
-            this.Tb_SerialNumber.Size = new System.Drawing.Size(235, 39);
+            this.Tb_SerialNumber.Size = new System.Drawing.Size(176, 35);
             this.Tb_SerialNumber.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_SerialNumber.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.Tb_SerialNumber.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -1507,20 +1613,18 @@ namespace FTGUI
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.Gray;
-            this.label30.Location = new System.Drawing.Point(1333, 87);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label30.Location = new System.Drawing.Point(1000, 71);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(156, 20);
+            this.label30.Size = new System.Drawing.Size(122, 16);
             this.label30.TabIndex = 76;
             this.label30.Text = "Container Position :";
             // 
             // Tb_ContainerPosition
             // 
             this.Tb_ContainerPosition.Enabled = false;
-            this.Tb_ContainerPosition.Location = new System.Drawing.Point(1332, 111);
-            this.Tb_ContainerPosition.Margin = new System.Windows.Forms.Padding(4);
+            this.Tb_ContainerPosition.Location = new System.Drawing.Point(999, 90);
             this.Tb_ContainerPosition.Name = "Tb_ContainerPosition";
-            this.Tb_ContainerPosition.Size = new System.Drawing.Size(260, 39);
+            this.Tb_ContainerPosition.Size = new System.Drawing.Size(195, 35);
             this.Tb_ContainerPosition.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Tb_ContainerPosition.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Tb_ContainerPosition.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1535,10 +1639,10 @@ namespace FTGUI
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1850, 886);
+            this.ClientSize = new System.Drawing.Size(1388, 829);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.Tb_ContainerPosition);
             this.Controls.Add(this.label2);
@@ -1554,6 +1658,7 @@ namespace FTGUI
             this.Controls.Add(this.ResourceGrouping);
             this.Controls.Add(this.Logo);
             this.Controls.Add(this.MyTitle);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Main";
             this.Palette = this.HiPOTPalette;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -1661,6 +1766,16 @@ namespace FTGUI
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox Tb_SerialNumber;
         private System.Windows.Forms.Label label30;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox Tb_ContainerPosition;
+        private System.Windows.Forms.Label label31;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker Dt_MoveOut;
+        private System.Windows.Forms.Label label32;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker Dt_MoveIn;
+        private System.Windows.Forms.Label label35;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Tb_PHLG;
+        private System.Windows.Forms.Label label33;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Tb_THC;
+        private System.Windows.Forms.Label label34;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Tb_PHLR;
     }
 }
 
